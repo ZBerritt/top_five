@@ -6,6 +6,8 @@ app = Flask(__name__)
 submissions = []
 
 @app.route("/", methods=["GET", "POST"])
+#home function - Essentially the home function of the top 5 system.
+#returns the html file
 def home():
     global submissions
     if request.method == "POST":
